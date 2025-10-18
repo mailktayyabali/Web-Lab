@@ -1,0 +1,79 @@
+body{
+    
+    margin: 0;
+    padding: 0;
+}
+nav{
+    background-color: #012768;
+    color:white;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    
+}
+#image {
+    width: 3%;
+    height: 3%;
+    float: left;
+    margin-left: 2px;
+    margin-top: 10px;
+}
+ul {
+    list-style-type: none;
+    margin: px;
+    padding: 0;
+    overflow: hidden;
+    display: flex;
+    gap: 50px;
+    margin-right: 400px;
+
+}
+.nav a {
+    color: white;
+    text-decoration: none;
+    padding: 14px 20px;
+    display: block;
+}
+.container {
+    padding: 20px;
+    text-align: center;
+    height: 100vh;
+    width: auto;
+    background-image: url(https://moellim.com/wp-content/uploads/2025/02/Riphah-International-University-Lahore-900x580-1.webp);
+    background-size: cover;
+    background-position: center;
+    
+}
+.container h1{
+    font-size: 50px;
+    color: rgb(255, 0, 0);
+    margin-bottom: 20px;
+}
+.container button{
+    padding: 10px 20px;
+    font-size: 20px;
+    background-color: #ff0101;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.des{
+    height: 50px;
+    padding: 10px;
+    background-color: rgb(244, 58, 11);
+    color: white;
+    margin: 20px;  
+}
+.second-div{
+    height: 20pc;
+    background-color:lightgray;
+    display: flex;
+    justify-content: space-around;
+}
+.third-div{
+    margin-top: 50px;
+    height: 20pc;
+    background-color:lightgray;
+    display: flex;
+}
