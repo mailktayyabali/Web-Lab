@@ -96,34 +96,125 @@ console.log(0 || undefined);
 console.log(!null);
 console.log(! (0 === 0));
 console.log(!(3 <= 4));
-//slide7
+let students = [];
+console.log("let students = [];");
+console.log(students);
+let colors = ['red', 'orange', 'yellow'];
+console.log("let colors = ['red', 'orange', 'yellow'];");
+console.log(colors);
+let lottoNums = [19,22,56,12,51];
+console.log("let lottoNums = [19,22,56,12,51];")
+console.log(lottoNums);
+let stuff = [true, 68, 'cat', null];
+console.log("let stuff = [true, 68, 'cat', null];");
+console.log(stuff);
+console.log("colors.length");
+console.log(colors.length);
+console.log("colors[0]");
+console.log(colors[0]);
+console.log("colors[1]");
+console.log(colors[1]);
+console.log("colors[2]");
+console.log(colors[2]);
+console.log("colors[3]");
+console.log(colors[3]);
+console.log("colors [4]");
+console.log(colors [4]);
+console.log("colors[0] = 'red';");
+console.log(colors[0] = 'red');
+console.log("colors[2] = 'yellow'");
+console.log(colors[2] = 'yellow');
+console.log("colors[3] = 'green'");
+console.log(colors[3] = 'green');
+console.log("colors[4] = 'blue'");
+console.log(colors[4] = 'blue');
+const animals = [ 'lions', 'tigers', 'bears' ];
+console.log("const animals = [ 'lions', 'tigers', 'bears' ];");
+for (let i = 0 ; i < animals.length; i++) {
+console.log(i, animals[i]);
+}
+let str1 = 'LOL';
+console.log("let str1 = 'LOL';");
+for (let i = 0 ; i <= 4 ; i++) {
+console.log("Outer:", i);
+for (let j = 0 ; j < str1.length; j++) {
+console.log(' Inner:', str1[j]);
+}
+}
+let num = 0;
+console.log("let num = 0;");
+while (num < 10) {
+console.log(num);
+num++;
+}
+let subreddits = [ 'soccer', 'popheads', 'cringe', 'books' ];
+console.log("let subreddits = [ 'soccer', 'popheads', 'cringe', 'books' ];");
+for (let sub of subreddits) {
+console.log(`${sub} - www.reddit.com/r/${sub}`);
+}           
+const magicSquare = [
+[2, 7, 6],
+[9,5,1],
+[4,3,8]
+];
+for (let row of magicSquare) {
+let sum = 0;
+for (let num of row) {
+sum += num;
+}
+console.log(`Row of ${row} sums to ${sum}`);
+}
+function grumpus() {
+console.log('ugh...you again...');
+console.log('for the last time...');
+console.log('LEAVE ME ALONE!!!');
+}
+console.log(grumpus());
+function greet(person) {
+console.log(`Hi, ${person}!`);
+}
+console.log(greet("Khan"));
+function findLargest(x, y) {
+if (x > y) {
+console.log(`${x} is larger!`);
+}
+else if (x < y) {
+console.log(`${y} is larger!`);
+}
+else {
+console.log(`${x} and ${y} are equal!`);
+}
+}
+console.log(findLargest(-2, 77));            
+console.log(findLargest(33, 33));
+
 function helpMe(){
 let msg = "I'm on fire!";
-msg; //"I'm on fire";
+msg; 
 }
-msg; //NOT DEFINED!
+msg; 
 
-//slide 8
-// const nums = [9, 8, 7, 6, 5, 4, 3, 2, 1];
-// nums.forEach(function (n) {
-// console.log(n*n)let bird = 'mandarin duck';
+
+
+
+
 0
 let bird = 'mandarin duck';
 function birdWatch(){
 let bird = 'golden pheasant';
-console.log(bird); //'golden pheasant'
+console.log(bird); 
 }
-console.log(bird); //'mandarin duck'
+console.log(bird); 
 birdWatch();
-//mandarin duck
+
 let radius = 8;
 if(radius > 0){
 const PI = 3.14 ;
 let circ = 2 * PI * radius;
 }
-console.log(radius); //8
-//console.log(PI); //NOT DEFINED
-//console.log(circ); //NOT DEFINED
+console.log(radius); 
+
+
 function outer() {
 let hero = "Black Panther";
 function inner() {
@@ -140,15 +231,15 @@ func();
 function laugh() {
 }
 console.log("HAHAHAHAHAHAHAHHAHAHAHAH");
-callTwice(laugh); //pass a function as an arg!
+callTwice(laugh); 
 function makeBetweenFunc(min, max) {
     return function (val) {
         return val >= min && val <= max;
     }
 }
 const inAgeRange = makeBetweenFunc(18, 100);
-console.log(inAgeRange(17)); // false
-console.log(inAgeRange(68)); // true
+console.log(inAgeRange(17)); 
+console.log(inAgeRange(68)); 
 const math = {
 blah: 'Hi!',
 add(x, y) {
@@ -159,7 +250,7 @@ return x * y;
 }
 }
 console.log(math.add(50, 60));
-//110
+
 const person = {
 first: 'Robert',
 last: 'Herjavec',
@@ -167,35 +258,35 @@ fullName() {
 return `${this.first} ${this.last}`
 }
 }
-console.log(person.fullName()); //"Robert Herjavec"
+console.log(person.fullName()); 
 person.last = "Plant";
-console.log(person.fullName()); //"Robert Plant"
-// //prints: 81, 64, 49, 36, 25, 16, 9, 4, 1
-// });
-// nums.forEach(function (el) {
-// if (el % 2 === 0) { console.log(el)
-// //prints: 8, 6, 4, 2
-// }
-// })
+console.log(person.fullName()); 
+
+
+
+
+
+
+
 const texts = ['rofl', 'lol', 'omg', 'ttyl'];
 const caps = texts.map(function (t){
 return t.toUpperCase();
 })
-console.log(texts); //["rofl", "lol", "omg", "ttyl"]
-console.log(caps); //["ROFL", "LOL", "OMG", "TTYL"]
-const square = (x) => { return x * x;
+console.log(texts); 
+console.log(caps); 
+const square2 = (x) => { return x * x;
 }
-console.log(square(4));
+console.log(square2(4));
 const sum = (x, y) => {
 return x + y;
 }
 console.log(sum(4, 5));
-//parens are optional if there's only one parameter:
+
 const square1 = x => {
 return x * x;
 }
 console.log(square1(4));
-//Use empty parens for functions w/ no parameters:
+
 const singASong = () => {
 return "LA LA LA LA LA LA";
 }
@@ -208,39 +299,39 @@ let movies = [
 ]
 let movie = movies.find(movie => {
 return movie.includes ('Mrs.')
-}) //"Mr. and Mrs. Smith"
+}) 
 console.log(movie);
 let movie2 = movies.find(m => m.indexOf('Mrs')=== 0)
 console.log(movie2);
-//"Mrs. Doubtfire"
+
 const nums1 =[9, 8, 7, 6, 5, 4, 3, 2, 1];
 const odds = nums1.filter(n => {
-return n % 2 === 1; //our callback returns true or false
-//if it returns true, n is added to the filtered array
+return n % 2 === 1; 
+
 })
 console.log(odds);
-//[9, 7, 5, 3, 1]
+
 const smallNums = nums1.filter (n => n < 5 ) ;
-//[4, 3, 2, 1]
+
 console.log(smallNums);
 const words = ["dog", 'dig', 'log', 'bag', 'wag'];
 console.log(words.every(word => word.length === 3));
 console.log(words.every(word => word [0] === 'd'));
-//false
+
 console.log(words.every(w => {
 let last_letter = w[w.length - 1];
 return last_letter === 'g'
-})) //true
+})) 
 const words1 = ['dog', 'jello', 'log', 'cupcake', 'bag', 'wag'];
-//Are there any words longer than 4 characters?
-//true
+
+
 console.log(words1.some(word1 => word1.length > 4));
-//Do any words start with 'Z'?
+
 console.log(words1.some(word => word [0] === 'Z'));
-//false
-//Do any words contain 'cake'?
+
+
 console.log(words1.some(w => w. includes ('cake')));
-//true
+
 let arr=[3, 5, 7, 9, 11].reduce((accumulator, currentValue) => {
 return accumulator + currentValue;
 });
@@ -251,11 +342,98 @@ if (currVal > max) return currVal;
 return max;
 })
 console.log(topScore);
-//99
-//A shorter option w/ Math.max & implicit return
+
+
 const topScore1 = grades.reduce((max, currVal) => (
 Math.max(max, currVal)
 ))
 console.log(topScore1);
-//99
 
+function rant(message) {
+    console.log(message.toUpperCase());
+    console.log(message.toUpperCase());
+    console.log(message.toUpperCase());
+}
+console.log(rant("I hate beets"));
+function isSnakeEyes(die1, die2) {
+    if (die1 === 1 && die2 === 1) {
+        console.log("Snake Eyes!");
+    } else {
+        console.log("Not Snake Eyes!");
+    }
+}
+console.log(isSnakeEyes(1,1));
+console.log(isSnakeEyes(1,5));
+console.log(isSnakeEyes(4,5));
+function multiply(num1, num2) {
+    return num1 * num2;
+}
+console.log(multiply(2,3));
+console.log(multiply(9,9));
+console.log(multiply(5,4));
+function isShortsWeather(temperature) {
+    if (temperature >= 75) {
+        return true;
+    } else {
+        return false;
+    }
+}
+console.log(isShortsWeather(80));
+console.log(isShortsWeather(48));
+console.log(isShortsWeather(75));
+function lastElement(arr) {
+    if (arr.length === 0) {
+        return null;
+    } else {
+        return arr[arr.length - 1];
+    }
+}
+console.log(lastElement([3,5,7]));
+console.log(lastElement([1]));
+console.log(lastElement([]));
+function capitalize(str) {
+    if (str.length === 0) {
+        return str;
+    }
+    let firstLetter = str[0].toUpperCase();
+    let restOfString = str.slice(1);
+    return firstLetter + restOfString;
+}
+console.log(capitalize('eggplant'));
+console.log(capitalize('pamplemousse'));
+console.log(capitalize('squid'));
+function sumArray(arr) {
+    let total = 0;
+    for (let num of arr) {
+        total += num;
+    }
+    return total;
+}
+console.log(sumArray([1,2,3]));
+console.log(sumArray([2,2,2,2]));
+console.log(sumArray([50,50,1]));
+function returnDay(num) {
+    const daysOfWeek = [
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday",
+        "Saturday",
+        "Sunday"
+    ];
+    if (num < 1 || num > 7) {
+        return null;
+    } else {
+        return daysOfWeek[num - 1];
+    }
+}
+console.log(returnDay(1));
+console.log(returnDay(7));
+console.log(returnDay(4));
+console.log(returnDay(0));
+const square = function(num) {
+    return num * num;
+};
+console.log(square(4));
+console.log(square(3));
