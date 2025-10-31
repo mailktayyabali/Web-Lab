@@ -261,13 +261,6 @@ return `${this.first} ${this.last}`
 console.log(person.fullName()); 
 person.last = "Plant";
 console.log(person.fullName()); 
-
-
-
-
-
-
-
 const texts = ['rofl', 'lol', 'omg', 'ttyl'];
 const caps = texts.map(function (t){
 return t.toUpperCase();
