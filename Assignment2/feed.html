@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finders Keepers - Lost & Found</title>
+    <link rel="stylesheet" href="feed.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <svg class="logo-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="12" cy="12" r="10"/>
+                    <path d="M12 6v6l4 2"/>
+                </svg>
+                <span class="brand-name">Finders Keepers</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#" class="nav-link">Home</a></li>
+                <li><a href="#" class="nav-link">Lost</a></li>
+                <li><a href="#" class="nav-link">Found</a></li>
+                <li><a href="about.html" class="nav-link">About us</a></li>
+                <li><a href="#" class="nav-link active">Feed</a></li>
+            </ul>
+            <div class="nav-actions">
+                <button class="new-post-btn">New Post +</button>
+                <div class="user-avatar">
+                    <img src="https://via.placeholder.com/40" alt="User">
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main class="main-content">
+        <div class="header-section">
+            <h1 class="page-title">All Posts Feed</h1>
+            <p class="page-subtitle">Browse the latest lost and found items from our community.</p>
+        </div>
+
+        <div class="filter-section">
+            <div class="search-box">
+                <svg class="search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="11" cy="11" r="8"/>
+                    <path d="M21 21l-4.35-4.35"/>
+                </svg>
+                <input type="text" placeholder="Search by item, description...">
+            </div>
+            <select class="filter-select">
+                <option>All Categories</option>
+                <option>Electronics</option>
+                <option>Personal Items</option>
+                <option>Accessories</option>
+            </select>
+            <input type="date" class="date-input" placeholder="mm/dd/yyyy">
+            <div class="location-filter">
+                <svg class="location-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                    <circle cx="12" cy="10" r="3"/>
+                </svg>
+                <input type="text" placeholder="Location">
+            </div>
+        </div>
+
+        <div class="posts-grid">
+            <!-- Post 1 -->
+            <div class="post-card">
+                <span class="badge badge-lost">LOST</span>
+                <div class="post-image">
+                    <img src="https://images.unsplash.com/photo-1627123424574-724758594e93?w=400&h=300&fit=crop" alt="Brown Leather Wallet">
+                </div>
+                <div class="post-content">
+                    <h3 class="post-title">Brown Leather Wallet</h3>
+                    <p class="post-description">Classic bifold wallet containing ID a...</p>
+                    <div class="post-meta">
+                        <span class="meta-item">📅 May 20, 2024</span>
+                        <span class="meta-item">📍 Downtown Metro Station</span>
+                    </div>
+                    <button class="view-details-btn">View Details</button>
+                </div>
+            </div>
+
+            <!-- Post 2 -->
+            <div class="post-card">
+                <span class="badge badge-found">FOUND</span>
+                <div class="post-image">
+                    <img src="https://images.unsplash.com/photo-1583511655857-d19b40a7a54e?w=400&h=300&fit=crop" alt="Golden Retriever Puppy">
+                </div>
+                <div class="post-content">
+                    <h3 class="post-title">Golden Retriever Puppy</h3>
+                    <p class="post-description">Friendly puppy found wandering wi...</p>
+                    <div class="post-meta">
+                        <span class="meta-item">📅 May 19, 2024</span>
+                        <span class="meta-item">📍 Oakwood Park</span>
+                    </div>
+                    <button class="view-details-btn">View Details</button>
+                </div>
+            </div>
+
+            <!-- Post 3 -->
+            <div class="post-card">
+                <span class="badge badge-lost">LOST</span>
+                <div class="post-image">
+                    <img src="https://images.unsplash.com/photo-1473968512647-3e447244af8f?w=400&h=300&fit=crop" alt="DJI Mini 3 Pro Drone">
+                </div>
+                <div class="post-content">
+                    <h3 class="post-title">DJI Mini 3 Pro Drone</h3>
+                    <p class="post-description">Last seen flying near the university ...</p>
+                    <div class="post-meta">
+                        <span class="meta-item">📅 May 18, 2024</span>
+                        <span class="meta-item">📍 University Campus</span>
+                    </div>
+                    <button class="view-details-btn">View Details</button>
+                </div>
+            </div>
+
+            <!-- Post 4 -->
+            <div class="post-card">
+                <span class="badge badge-found">FOUND</span>
+                <div class="post-image">
+                    <img src="https://images.unsplash.com/photo-1582139329536-e7284fece509?w=400&h=300&fit=crop" alt="Set of Car Keys">
+                </div>
+                <div class="post-content">
+                    <h3 class="post-title">Set of Car Keys</h3>
+                    <p class="post-description">Found on a bench. Has a small cat ...</p>
+                    <div class="post-meta">
+                        <span class="meta-item">📅 May 17, 2024</span>
+                        <span class="meta-item">📍 Central Library Entrance</span>
+                    </div>
+                    <button class="view-details-btn">View Details</button>
+                </div>
+            </div>
+
+            <!-- Post 5 -->
+            <div class="post-card">
+                <span class="badge badge-lost">LOST</span>
+                <div class="post-image">
+                    <img src="https://images.unsplash.com/photo-1524805444758-089113d48a6d?w=400&h=300&fit=crop" alt="Silver Wristwatch">
+                </div>
+                <div class="post-content">
+                    <h3 class="post-title">Silver Wristwatch</h3>
+                    <p class="post-description">Men's watch with a metal strap. Ha...</p>
+                    <div class="post-meta">
+                        <span class="meta-item">📅 May 16, 2024</span>
+                        <span class="meta-item">📍 City Hall</span>
+                    </div>
+                    <button class="view-details-btn">View Details</button>
+                </div>
+            </div>
+
+            <!-- Post 6 -->
+            <div class="post-card">
+                <span class="badge badge-found">FOUND</span>
+                <div class="post-image">
+                    <img src="https://images.unsplash.com/photo-1553062407-98eeb64c6a62?w=400&h=300&fit=crop" alt="Black Backpack">
+                </div>
+                <div class="post-content">
+                    <h3 class="post-title">Black Backpack</h3>
+                    <p class="post-description">Herschel backpack left on the bus....</p>
+                    <div class="post-meta">
+                        <span class="meta-item">📅 May 15, 2024</span>
+                        <span class="meta-item">📍 Bus Route 5</span>
+                    </div>
+                    <button class="view-details-btn">View Details</button>
+                </div>
+            </div>
+
+            <!-- Post 7 -->
+            <div class="post-card">
+                <span class="badge badge-lost">LOST</span>
+                <div class="post-image">
+                    <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=400&h=300&fit=crop" alt="Wireless Earbuds">
+                </div>
+                <div class="post-content">
+                    <h3 class="post-title">Wireless Earbuds</h3>
+                    <p class="post-description">White earbuds in a charging case, ...</p>
+                    <div class="post-meta">
+                        <span class="meta-item">📅 May 14, 2024</span>
+                        <span class="meta-item">📍 Fitness Center</span>
+                    </div>
+                    <button class="view-details-btn">View Details</button>
+                </div>
+            </div>
+
+            <!-- Post 8 -->
+            <div class="post-card">
+                <span class="badge badge-found">FOUND</span>
+                <div class="post-image">
+                    <img src="https://images.unsplash.com/photo-1574258495973-f010dfbb5371?w=400&h=300&fit=crop" alt="Prescription Glasses">
+                </div>
+                <div class="post-content">
+                    <h3 class="post-title">Prescription Glasses</h3>
+                    <p class="post-description">Black-rimmed glasses found in the ...</p>
+                    <div class="post-meta">
+                        <span class="meta-item">📅 May 13, 2024</span>
+                        <span class="meta-item">📍 Cineplex Theater 4</span>
+                    </div>
+                    <button class="view-details-btn">View Details</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="loading-section">
+            <svg class="loading-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M21 12a9 9 0 1 1-6.219-8.56"/>
+            </svg>
+            <span>Loading more...</span>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-links">
+                <a href="#">About</a>
+                <a href="#">Contact</a>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+            </div>
+            <div class="footer-copyright">
+                © 2024 Finders Keepers. All rights reserved.
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
