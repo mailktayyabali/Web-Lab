@@ -1,0 +1,52 @@
+<! DOCTYPE html >
+<html>
+  <head>
+    <title>DOM Example</title>
+  </head>
+  <body>
+    <h1 id="title">Welcome !</h1>
+    <p class="message">This is a paragraph .</p>
+    <div id="container">
+      <p>First paragraph in container.</p>
+      <p>Second paragraph in container.</p>
+    </div>
+    <button id="btn">Click Me</button>
+    <br />
+    <br />
+    <br />
+    <h2>To-Do List</h2>
+    <div class="todo-container">
+      <input type="text" id="todoInput" placeholder="Enter a new task..." />
+      <button id="addBtn">Add</button>
+      <ul id="todoList"></ul>
+    </div>
+    <br />
+    <br />
+    <br />
+    <!-- Form Validation Advance DOM -->
+    <form id=" userForm ">
+      <input type=" email " id=" email " placeholder=" Enter your email " /> 
+      <small id="msg "> </small>
+    </form>
+  <h3>Image Gallery</h3>
+    <div id="gallery">
+      <img src="https://c.ndtvimg.com/2025-11/o254rm6k_asim-munir_625x300_06_November_25.jpg?im=FeatureCrop,algorithm=dnn,width=270,height=300" width="100" />
+      <img src="https://c.ndtvimg.com/2023-10/g2hr5pq8_nawaz-sharif-maryam_625x300_21_October_23.jpg" width="100" />
+    </div>
+    <div id="lightbox" style="display: none">
+      <img id="lightImage" />
+    </div>
+
+    <!-- Dark/Light theme-->
+    <h3>Dark/Light Theme</h3>
+        <button id="toggleTheme">Switch Theme</button>
+        <div id="content">Welcome to My Page!</div>
+
+    <!--Dynamic Table Generator-->
+    <input type ="number" id="rows" placeholder="Rows">
+    <input type ="number" id="cols" placeholder="Columns">
+    <button id="generate">Generate Table</button>
+    <div id="tableContainer"></div>
+    <script src="script.js"></script>
+  </body>
+</html>
