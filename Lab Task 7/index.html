@@ -52,7 +52,7 @@ Lab 7
       <div class="row g-3">
         <div class="col-12 col-md-6 col-lg-4">
           <div class="card shadow-sm">
-            <img src="food.jpg" class="card-img-top" alt="Food" />
+            <img src="https://i.ytimg.com/vi/IBlIMdCyVgw/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLAdPgE8zgq6MmyB1fN1xEYffhybtw" class="card-img-top" alt="Food" />
             <div class="card-body">
               <h5 class="card-title">Delicious Pasta</h5>
               <p class="card-text d-none d-sm-block">
@@ -64,7 +64,7 @@ Lab 7
         </div>
         <div class="col-12 col-md-6 col-lg-4">
           <div class="card shadow-sm">
-            <img src="food.png" class="card-img-top" alt="Food" />
+            <img src="https://i.ytimg.com/vi/IBlIMdCyVgw/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLAdPgE8zgq6MmyB1fN1xEYffhybtw" class="card-img-top" alt="Food" />
             <div class="card-body">
               <h5 class="card-title">Delicious Pasta</h5>
               <p class="card-text d-none d-sm-block">
@@ -76,7 +76,7 @@ Lab 7
         </div>
         <div class="col-12 col-md-6 col-lg-4">
           <div class="card shadow-sm">
-            <img src="food.webp" class="card-img-top" alt="Food" />
+            <img src="https://i.ytimg.com/vi/IBlIMdCyVgw/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLAdPgE8zgq6MmyB1fN1xEYffhybtw" class="card-img-top" alt="Food" />
             <div class="card-body">
               <h5 class="card-title">Delicious Pasta</h5>
               <p class="card-text d-none d-sm-block">
@@ -279,9 +279,7 @@ Lab 7
           const text = $("#taskInput").val().trim();
           if (text) {
             $("#tasks").append(
-              <li>
-                ${text} <button class="remove btn btn-sm btn-danger">x</button>
-              </li>
+              `<li>${text} <button class="remove btn btn-sm btn-danger">x</button></li>`
             );
             $("#taskInput").val("");
           }
