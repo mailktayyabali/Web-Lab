@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Digital Clock + Stopwatch</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            text-align: center;
+        }
+        .time {
+            font-size: 40px;
+            margin-bottom: 20px;
+        }
+        button {
+            padding: 10px 18px;
+            margin: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Digital Wall Clock</h2>
+    <div class="time" id="clock">00:00:00</div>
+
+    <h2>Stopwatch</h2>
+    <div class="time" id="stopwatch">00:00:00</div>
+
+    <button id="startBtn">Start</button>
+    <button id="stopBtn">Stop</button>
+    <button id="resumeBtn">Resume</button>
+    <button id="resetBtn">Reset</button>
+
+<script>
+    // ------------------ DIGITAL CLOCK ------------------
+    function updateClock() {
+        let now = new Date();
+        let h = String(now.getHours()).padStart(2, "0");
+        let m = String(now.getMinutes()).padStart(2, "0");
+        let s = String(now.getSeconds()).padStart(2, "0");
+        document.getElementById("clock").textContent = `${h}:${m}:${s}`;
+    }
+    setInterval(updateClock, 1000);
+    
+    // ------------------ STOPWATCH ------------------
+    let stopwatch = document.getElementById("stopwatch");
+    let ms = 0, s = 0, m = 0;
+    let interval = null;
+    let running = false;
+
+    function updateStopwatch() {
+        ms++;
+        if (ms === 100) { ms = 0; s++; }
+        if (s === 60) { s = 0; m++; }
+
+        let mm = String(m).padStart(2, "0");
+        let ss = String(s).padStart(2, "0");
+        let mss = String(ms).padStart(2, "0");
+
+        stopwatch.textContent = `${mm}:${ss}:${mss}`;
+    }
+
+    document.getElementById("startBtn").onclick = function () {
+        if (!running) {
+            interval = setInterval(updateStopwatch, 10);
+            running = true;
+        }
+    };
+
+    document.getElementById("stopBtn").onclick = function () {
+        clearInterval(interval);
+        running = false;
+    };
+
+    document.getElementById("resumeBtn").onclick = function () {
+        if (!running) {
+            interval = setInterval(updateStopwatch, 10);
+            running = true;
+        }
+    };
+
+    document.getElementById("resetBtn").onclick = function () {
+        clearInterval(interval);
+        running = false;
+        ms = 0; s = 0; m = 0;
+        stopwatch.textContent = "00:00:00";
+    };
+</script>
+
+</body>
+</html>
