@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Form</h1>
+
+      <form action="#">
+        <label for="name">Name:</label>
+        <input type="text" id="name" placeholder="Enter your name" />
+        <span id="nameError" class="error"></span>
+        <br />
+        <label for="email">Email:</label>
+        <input type="email" id="email" placeholder="Enter your email" />
+        <span id="emailError" class="error"></span>
+        <br />
+        <label for="password">Password:</label>
+        <input
+          type="password"
+          id="password"
+          placeholder="Enter your password"
+        />
+        <span id="passwordError" class="error"></span>
+      </form>
+    </div>
+    <div class="container">
+      <h1>Drinking Water Counter</h1>
+      <button id="button">click</button>
+      <p>Cups of water drunk: <span id="displaycount">0</span></p>
+    </div>
+   <h3>Image Gallery</h3>
+    <div id="gallery">
+      <img src="https://pizzam21.pk/laravel_code/public/slider/1509099750.jpg" width="100" />
+      <img src="https://i.pinimg.com/736x/7b/f9/87/7bf98754dfca1cc63fb46bc46abb302a.jpg" width="100" />
+    </div>
+    <div id="lightbox" style="display: none">
+      <img id="lightImage" />
+    </div>
+
+
+    <script src="script.js"></script>
+  </body>
+</html>
