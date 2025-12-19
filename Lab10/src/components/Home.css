@@ -3,159 +3,148 @@
 }
 
 .hero {
-  background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
-  color: white;
-  padding: 6rem 2rem;
+  background: #f9fafb;
+  color: #1f2937;
+  padding: 4rem 2rem;
   text-align: center;
+  border-bottom: 1px solid #e5e7eb;
 }
 
 .hero-content h1 {
-  font-size: 3.5rem;
+  font-size: 2.5rem;
   margin-bottom: 1rem;
-  font-weight: 700;
+  font-weight: 600;
 }
 
 .hero-content p {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   margin-bottom: 2rem;
-  opacity: 0.9;
+  color: #6b7280;
 }
 
 .hero-btn {
-  padding: 1rem 2.5rem;
-  background: white;
-  color: #1a1a2e;
+  padding: 0.75rem 2rem;
+  background: #2563eb;
+  color: white;
   border: none;
-  border-radius: 50px;
-  font-size: 1.1rem;
-  font-weight: bold;
+  border-radius: 4px;
+  font-size: 1rem;
+  font-weight: 500;
   cursor: pointer;
-  transition: all 0.3s ease;
 }
 
 .hero-btn:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  background: #1d4ed8;
 }
 
 .features {
   max-width: 1200px;
-  margin: 4rem auto;
+  margin: 3rem auto;
   padding: 0 1rem;
 }
 
 .features h2 {
   text-align: center;
-  font-size: 2.5rem;
-  color: #333;
-  margin-bottom: 3rem;
+  font-size: 2rem;
+  color: #1f2937;
+  margin-bottom: 2rem;
 }
 
 .features-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem;
 }
 
 .feature-card {
-  background: white;
-  padding: 2rem;
-  border-radius: 8px;
+  background: #f9fafb;
+  padding: 1.5rem;
+  border-radius: 4px;
   text-align: center;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-  transition: all 0.3s ease;
-}
-
-.feature-card:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 8px 20px rgba(0, 168, 168, 0.2);
-}
-
-.feature-icon {
-  font-size: 3rem;
-  margin-bottom: 1rem;
+  border: 1px solid #e5e7eb;
 }
 
 .feature-card h3 {
-  color: #333;
+  color: #1f2937;
   margin-bottom: 0.5rem;
+  font-size: 1.1rem;
 }
 
 .feature-card p {
-  color: #666;
-  line-height: 1.6;
+  color: #6b7280;
+  line-height: 1.5;
+  font-size: 0.9rem;
 }
 
 .cta {
-  background: #f9f9f9;
-  padding: 4rem 2rem;
+  background: #f9fafb;
+  padding: 3rem 2rem;
   text-align: center;
-  margin: 3rem 0;
+  margin: 2rem 0;
+  border-top: 1px solid #e5e7eb;
+  border-bottom: 1px solid #e5e7eb;
 }
 
 .cta h2 {
-  font-size: 2.5rem;
-  color: #333;
-  margin-bottom: 1rem;
+  font-size: 2rem;
+  color: #1f2937;
+  margin-bottom: 0.75rem;
 }
 
 .cta p {
-  font-size: 1.3rem;
-  color: #666;
-  margin-bottom: 2rem;
+  font-size: 1.1rem;
+  color: #6b7280;
+  margin-bottom: 1.5rem;
 }
 
 .cta-btn {
-  padding: 1rem 2.5rem;
-  background: linear-gradient(90deg, #00a8a8, #00d4d4);
+  padding: 0.75rem 2rem;
+  background: #2563eb;
   color: white;
   border: none;
-  border-radius: 50px;
-  font-size: 1.1rem;
-  font-weight: bold;
+  border-radius: 4px;
+  font-size: 1rem;
+  font-weight: 500;
   cursor: pointer;
-  transition: all 0.3s ease;
 }
 
 .cta-btn:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 10px 25px rgba(0, 168, 168, 0.4);
+  background: #1d4ed8;
 }
 
 .about-preview {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 3rem 1rem;
+  padding: 2rem 1rem;
 }
 
 .about-content h2 {
-  font-size: 2.5rem;
-  color: #333;
-  margin-bottom: 1.5rem;
+  font-size: 2rem;
+  color: #1f2937;
+  margin-bottom: 1rem;
 }
 
 .about-content p {
-  font-size: 1.1rem;
-  color: #666;
-  line-height: 1.8;
-  margin-bottom: 2rem;
+  font-size: 1rem;
+  color: #6b7280;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
   max-width: 600px;
 }
 
 .about-btn {
-  padding: 0.75rem 1.5rem;
-  background: #00a8a8;
+  padding: 0.6rem 1.2rem;
+  background: #2563eb;
   color: white;
   border: none;
   border-radius: 4px;
-  font-size: 1rem;
+  font-size: 0.95rem;
   cursor: pointer;
-  transition: all 0.3s ease;
+  font-weight: 500;
 }
 
 .about-btn:hover {
-  background: #008888;
-  transform: translateY(-2px);
+  background: #1d4ed8;
 }
 
 @media (max-width: 768px) {
@@ -164,12 +153,12 @@
   }
 
   .hero-content p {
-    font-size: 1.1rem;
+    font-size: 1rem;
   }
 
   .features h2,
   .cta h2 {
-    font-size: 1.8rem;
+    font-size: 1.5rem;
   }
 
   .features-grid {

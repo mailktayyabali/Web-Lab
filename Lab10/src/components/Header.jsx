@@ -10,9 +10,9 @@ export default function Header({ cartCount }) {
     <header className="header">
       <div className="header-container">
         <div className="logo" onClick={() => navigate('/')}>
-          <h1>🛍️ ShopHub</h1>
+          <h1>ShopHub</h1>
         </div>
-        
+
         <nav className="nav-menu">
           <button className="nav-link" onClick={() => navigate('/')}>
             Home
@@ -25,11 +25,11 @@ export default function Header({ cartCount }) {
           </button>
         </nav>
 
-        <button 
+        <button
           className="cart-button"
           onClick={() => navigate('/cart')}
         >
-          🛒 Cart 
+          🛒 Cart
           {cartCount > 0 && <span className="cart-count">{cartCount}</span>}
         </button>
       </div>

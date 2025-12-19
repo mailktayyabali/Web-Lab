@@ -5,67 +5,63 @@ export default function About() {
     <div className="about-container">
       <div className="about-header">
         <h1>About ShopHub</h1>
-        <p>Your trusted online shopping destination</p>
+        <p>An online shop for electronics and more</p>
       </div>
 
       <section className="about-section">
-        <h2>Our Story</h2>
+        <h2>What We Do</h2>
         <p>
-          Founded in 2020, ShopHub began with a simple mission: to make quality products accessible to everyone at the best possible prices. What started as a small team has grown into a thriving e-commerce platform serving thousands of satisfied customers worldwide.
+          We're a demo e-commerce site that sells electronics and accessories. This site uses the Fake Store API to display and manage products. It's built with React and React Router.
         </p>
       </section>
 
       <section className="about-section">
-        <h2>Our Mission</h2>
-        <p>
-          We believe in providing an exceptional shopping experience by offering:
-        </p>
+        <h2>Features</h2>
         <ul className="mission-list">
-          <li>🎯 Wide selection of quality products</li>
-          <li>💵 Competitive and transparent pricing</li>
-          <li>📦 Fast and reliable shipping</li>
-          <li>👥 Responsive customer support</li>
-          <li>🔒 Secure and safe transactions</li>
+          <li>Browse products by category</li>
+          <li>Search and filter items</li>
+          <li>Add products to cart</li>
+          <li>View product details and ratings</li>
+          <li>Manage cart quantities</li>
         </ul>
       </section>
 
       <section className="about-section">
-        <h2>Why Choose ShopHub?</h2>
+        <h2>What We Offer</h2>
         <div className="benefits-grid">
           <div className="benefit-item">
-            <h3>Quality Assurance</h3>
-            <p>Every product goes through rigorous quality checks before shipment.</p>
+            <h3>Free Shipping</h3>
+            <p>Orders over $50 ship free</p>
           </div>
           <div className="benefit-item">
-            <h3>Customer First</h3>
-            <p>Your satisfaction is our priority. We offer hassle-free returns and refunds.</p>
+            <h3>Easy Returns</h3>
+            <p>30-day return policy on all orders</p>
           </div>
           <div className="benefit-item">
-            <h3>Best Prices</h3>
-            <p>We work directly with manufacturers to bring you unbeatable prices.</p>
+            <h3>Fair Prices</h3>
+            <p>Competitive pricing on electronics</p>
           </div>
           <div className="benefit-item">
-            <h3>Fast Delivery</h3>
-            <p>Most orders are shipped within 24 hours for quick delivery.</p>
+            <h3>Quick Delivery</h3>
+            <p>Most orders ship within 2-3 days</p>
           </div>
           <div className="benefit-item">
-            <h3>Secure Shopping</h3>
-            <p>Your data is protected with industry-leading security measures.</p>
+            <h3>Secure Checkout</h3>
+            <p>Safe payment processing</p>
           </div>
           <div className="benefit-item">
-            <h3>Expert Support</h3>
-            <p>Our team is here 24/7 to help with any questions or concerns.</p>
+            <h3>Customer Support</h3>
+            <p>Email support for questions</p>
           </div>
         </div>
       </section>
 
       <section className="about-section">
-        <h2>Contact Us</h2>
+        <h2>Contact</h2>
         <div className="contact-info">
-          <p>📧 Email: <a href="mailto:support@shophub.com">support@shophub.com</a></p>
-          <p>📞 Phone: <a href="tel:+1234567890">+1 (234) 567-890</a></p>
-          <p>📍 Address: 123 Shopping Street, Commerce City, CC 12345</p>
-          <p>⏰ Hours: Monday - Friday, 9:00 AM - 6:00 PM (EST)</p>
+          <p>Email: <a href="mailto:support@shophub.com">support@shophub.com</a></p>
+          <p>Phone: <a href="tel:+1234567890">+1 (234) 567-890</a></p>
+          <p>Address: 123 Main Street, City, State 12345</p>
         </div>
       </section>
     </div>
