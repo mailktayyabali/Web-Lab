@@ -82,7 +82,7 @@ function App() {
                 onClick={fetchDogImage}
                 className="w-full bg-orange-500 hover:bg-orange-600 text-white font-bold py-2 px-4 rounded-lg transition duration-200"
               >
-                Get Another Dog 🐕
+                Get Another Dog 
               </button>
             </div>
           )}

@@ -10,24 +10,18 @@ export default function ProductList({ onAddToCart }) {
   const [searchTerm, setSearchTerm] = useState('');
   const navigate = useNavigate();
 
-  // Filter and sort products
   const filteredProducts = useMemo(() => {
     let products = PRODUCTS;
-
-    // Filter by category
     if (selectedCategory !== 'All') {
       products = products.filter(p => p.category === selectedCategory);
     }
 
-    // Filter by search term
     if (searchTerm) {
       products = products.filter(p =>
         p.name.toLowerCase().includes(searchTerm.toLowerCase()) ||
         p.description.toLowerCase().includes(searchTerm.toLowerCase())
       );
     }
-
-    // Sort products
     switch (sortBy) {
       case 'price-low':
         products.sort((a, b) => a.price - b.price);
@@ -51,8 +45,7 @@ export default function ProductList({ onAddToCart }) {
   return (
     <div className="product-list-container">
       <h2 className="page-title">Our Products</h2>
-      
-      {/* Search Bar */}
+    
       <div className="search-section">
         <input
           type="text"

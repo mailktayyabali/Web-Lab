@@ -60,7 +60,7 @@ export default function About() {
         <h2>Contact</h2>
         <div className="contact-info">
           <p>Email: <a href="mailto:support@shophub.com">support@shophub.com</a></p>
-          <p>Phone: <a href="tel:+1234567890">+1 (234) 567-890</a></p>
+          <p>Phone: <a href="tel:+1234567890">032567890</a></p>
           <p>Address: 123 Main Street, City, State 12345</p>
         </div>
       </section>

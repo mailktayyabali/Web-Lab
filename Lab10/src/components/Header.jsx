@@ -29,7 +29,7 @@ export default function Header({ cartCount }) {
           className="cart-button"
           onClick={() => navigate('/cart')}
         >
-          🛒 Cart
+           Cart
           {cartCount > 0 && <span className="cart-count">{cartCount}</span>}
         </button>
       </div>

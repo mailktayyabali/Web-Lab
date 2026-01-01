@@ -95,11 +95,11 @@ export default function ProductDetails({ onAddToCart }) {
               className="add-cart-button"
               onClick={handleAddToCart}
             >
-              🛒 Add {quantity > 1 ? `${quantity} Items` : 'to Cart'}
+               Add {quantity > 1 ? `${quantity} Items` : 'to Cart'}
             </button>
 
             <button className="wishlist-button">
-              ❤️ Add to Wishlist
+               Add to Wishlist
             </button>
           </div>
 
